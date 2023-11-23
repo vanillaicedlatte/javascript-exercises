@@ -1,7 +1,8 @@
 const removeFromArray = function(myArray, ...myNum) {
     const newArray = myArray.filter((item) => {
-        return item != myNum
-    })
+        return !myNum.includes(item);
+    });
+    console.log(newArray);
     return newArray;
     };
 
